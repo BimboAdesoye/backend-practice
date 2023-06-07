@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/header.ejs') %>
+  <body>
+    <%- include('../partials/nav.ejs') %>
+    <section>
+      <h1 class="home-heading">Welcome to my Home Page</h1>
+      <section class="home-content">
+        <% if(voters.length) {%> <% voters.map((voter)=> {%>
+        <h1><%= voter.name %></h1>
+        <h1><%= voter.party %></h1>
+        <h1><%= voter.candidate %></h1>
+        <% }) %> <% } else { %>
+        <h1>No Voters in town today</h1>
+        <% } %>
+      </section>
+    </section>
+  </body>
+</html>
