@@ -58,8 +58,11 @@ nav ul li {
 .about-heading {
   text-align: center;
   margin: 2rem 0;
-  font-size: 1.5rem;
   color: white;
+}
+
+.home-heading {
+  font-size: 2rem;
 }
 
 .home-content {
@@ -69,8 +72,13 @@ nav ul li {
   color: white;
 }
 
-.home-content h3 {
-  text-transform: uppercase;
+.name {
+  font-size: 1.7rem;
+  color: black;
+}
+
+.party {
+  font-style: italic;
 }
 
 .about-content {
